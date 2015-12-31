@@ -1,0 +1,70 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sh\ncd /tmp\nif [ -e /tmp/GEM-GHEC-v1.txt ]\nthen\n    rm -f /tmp/GEM-GHEC-v1.txt\nfi\nif [ -e /tmp/isc-gem-cat.zip ]\nthen\n    rm -f /tmp/isc-gem-cat.zip\nfi\nif [ -e /tmp/isc-gem-cat.csv ]\nthen\n    rm -f /tmp/isc-gem-cat.csv\nfi \n\nif hadoop fs -stat /tmp/isc-gem-cat.csv\nthen\n   hadoop fs -rm  /tmp/isc-gem-cat.csv\nfi\nif hadoop fs -stat /tmp/GEM-GHEC-v1.txt\nthen\n   hadoop fs -rm  /tmp/GEM-GHEC-v1.txt\nfi\n\nwget http://www.emidius.eu/GEH/download/GEM-GHEC-v1.txt\nwget http://colossus.iris.washington.edu/iscgem/download/isc-gem-cat.zip\nunzip isc-gem-cat.zip\nhadoop fs -put GEM-GHEC-v1.txt /tmp\nhadoop fs -put isc-gem-cat.csv /tmp\n",
+      "dateUpdated": "Dec 30, 2015 12:09:29 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1451477303881_317146807",
+      "id": "20151230-120823_1299994768",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "Process exited with an error: 127 (Exit value: 127)"
+      },
+      "dateCreated": "Dec 30, 2015 12:08:23 PM",
+      "dateStarted": "Dec 30, 2015 12:09:29 PM",
+      "dateFinished": "Dec 30, 2015 12:09:37 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1451477369902_-422817273",
+      "id": "20151230-120929_853927099",
+      "dateCreated": "Dec 30, 2015 12:09:29 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Note EFFYWCK2U",
+  "id": "2B7SFYNUD",
+  "angularObjects": {
+    "2B7ZZ9NUG": [],
+    "2B7EAMCGR": [],
+    "2B6VB43WK": [],
+    "2B76ABXTG": [],
+    "2BA5ZNE2K": [],
+    "2B8QD6FD7": [],
+    "2B9Q9SHMD": [],
+    "2B762WNA7": [],
+    "2B964F746": [],
+    "2B7P6UERZ": [],
+    "2B86G8FGX": [],
+    "2B8Y1QDKD": [],
+    "2B98RBWB5": [],
+    "2B9B4YS89": []
+  },
+  "config": {},
+  "info": {}
+}
