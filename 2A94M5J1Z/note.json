@@ -336,11 +336,25 @@
       "dateCreated": "Mar 26, 2015 9:46:58 PM",
       "dateStarted": "Jul 3, 2015 1:44:56 PM",
       "dateFinished": "Jul 3, 2015 1:44:56 PM",
-      "status": "FINISHED",
+      "status": "PENDING",
       "progressUpdateIntervalMs": 500
     },
     {
-      "config": {},
+      "dateUpdated": "Jan 1, 2016 10:04:42 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
       "settings": {
         "params": {},
         "forms": {}
