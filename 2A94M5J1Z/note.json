@@ -2,6 +2,7 @@
   "paragraphs": [
     {
       "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
+      "dateUpdated": "Jan 1, 2016 10:04:37 AM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -13,7 +14,9 @@
           "groups": [],
           "scatter": {}
         },
-        "editorHide": true
+        "editorHide": true,
+        "enabled": true,
+        "editorMode": "ace/mode/markdown"
       },
       "settings": {
         "params": {},
@@ -333,7 +336,22 @@
   ],
   "name": "Zeppelin Tutorial",
   "id": "2A94M5J1Z",
-  "angularObjects": {},
+  "angularObjects": {
+    "2B7ZZ9NUG": [],
+    "2B7EAMCGR": [],
+    "2B6VB43WK": [],
+    "2B76ABXTG": [],
+    "2B8QD6FD7": [],
+    "2B9Q9SHMD": [],
+    "2BA5ZNE2K": [],
+    "2B762WNA7": [],
+    "2B964F746": [],
+    "2B7P6UERZ": [],
+    "2B86G8FGX": [],
+    "2B8Y1QDKD": [],
+    "2B98RBWB5": [],
+    "2B9B4YS89": []
+  },
   "config": {
     "looknfeel": "default"
   },
