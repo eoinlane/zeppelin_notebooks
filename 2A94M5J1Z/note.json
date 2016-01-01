@@ -66,13 +66,14 @@
         "msg": "import org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\nbankText: org.apache.spark.rdd.RDD[String] \u003d ParallelCollectionRDD[32] at parallelize at \u003cconsole\u003e:65\ndefined class Bank\nbank: org.apache.spark.sql.DataFrame \u003d [age: int, job: string, marital: string, education: string, balance: int]\n"
       },
       "dateCreated": "Feb 10, 2015 1:52:59 AM",
-      "dateStarted": "Jul 3, 2015 1:43:40 PM",
+      "dateStarted": "Jan 1, 2016 10:04:38 AM",
       "dateFinished": "Jul 3, 2015 1:43:45 PM",
-      "status": "FINISHED",
+      "status": "PENDING",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
+      "dateUpdated": "Jan 1, 2016 10:04:38 AM",
       "config": {
         "colWidth": 4.0,
         "graph": {
@@ -106,7 +107,9 @@
               "aggr": "sum"
             }
           }
-        }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql"
       },
       "settings": {
         "params": {},
